@@ -1,15 +1,16 @@
-.navbar>.container-fluid {
-  justify-content: flex-start;
-}
-
 .navbar {
   border-bottom: 0.5px solid var(--mainColorLight2);
   --bs-navbar-padding-y: 0;
 }
 
+.navbar > .container-fluid {
+  justify-content: flex-start;
+}
+
 .navbar-brand {
   display: flex;
   color: var(--textcolor);
+  padding-right: 100px;
 }
 
 .navbar-brand:hover {
@@ -26,7 +27,7 @@
 }
 
 .navbar-collapse {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 form {
@@ -41,7 +42,7 @@ form {
   background-color: var(--mainColorLight2);
   border: none;
   border-radius: 0.6rem;
-  margin: 10px;
+  margin: 7px;
 }
 
 .form-control::placeholder {
@@ -63,8 +64,36 @@ input {
   color: var(--textcolor);
 }
 
-.main-logo {
-  margin: 10px 0 10px 0;
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0.54;
+  padding: 20px;
+  width: 20px;
+  color: var(--textcolor);
+  background-image: url("../Images/notification.svg");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: none;
 }
 
+.btn:hover {
+  background-color: var(--mainColorLight2);
+  border-radius: 50%;
+  opacity: 0.84;
+}
 
+[aria-current="notification-button"] {
+  pointer-events: unset;
+}
+
+.main-logo {
+  margin: 7px 0 7px 0;
+}
+
+.notification-icon {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+}
