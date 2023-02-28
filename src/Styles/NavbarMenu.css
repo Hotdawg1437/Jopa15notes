@@ -1,0 +1,47 @@
+.navbar {
+  border-bottom: 0.5px solid var(--mainColorLight2);
+  --bs-navbar-padding-y: 0;
+}
+
+.navbar-brand {
+  color: var(--textcolor);
+}
+
+.nav-link {
+  color: var(--textcolor);
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+  background-image: url("../Images/search.svg");
+  background-position: 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.form-control {
+  background-color: var(--mainColorLight2);
+  border: none;
+  border-radius: 0.6rem;
+}
+
+.form-control::placeholder {
+  color: var(--textcolor);
+  padding: 0 0 0 30px;
+}
+
+.me-2 {
+  height: 3rem;
+}
+
+input {
+  border-width: none;
+  color: var(--textcolor);
+}
+
+
+

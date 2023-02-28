@@ -1,10 +1,10 @@
 import React from "react"
-import Navbar from "./Components/Navbar"
+import NavbarMenu from "./Components/Navbar"
 
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
+      <NavbarMenu />
     </React.Fragment>
   )
 }

@@ -1,22 +1,30 @@
-import { VscGithubAlt } from "react-icons/vsc"
+import Container from "react-bootstrap/Container"
+import Form from "react-bootstrap/Form"
+import Navbar from "react-bootstrap/Navbar"
+import "../Styles/NavbarMenu.css"
+import mainLogo from "../Images/main-logo.svg"
 
-function Navbar() {
+function NavbarMenu() {
   return (
-    <header>
-      <h3>Logo</h3>
-      <nav>
-        <a href="/#">Заметки</a>
-        <a href="/#">Напоминания</a>
-        <a href="/#">Изменение ярлыков</a>
-        <a href="/#">Архив</a>
-        <a href="/#">Корзина</a>
-        <button></button>
-      </nav>
-      <button>
-        
-      </button>
-    </header>
+    <Navbar expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#home">
+          <img alt="mainLogo" src={mainLogo} width="50" height="50" /> Notes
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Поиск"
+              className="me-2"
+              aria-label="Search"
+            />
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 
-export default Navbar
+export default NavbarMenu
