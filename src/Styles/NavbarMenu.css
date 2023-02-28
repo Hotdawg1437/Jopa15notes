@@ -4,7 +4,11 @@
 }
 
 .navbar-brand {
+  display: flex;
   color: var(--textcolor);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .nav-link {
@@ -18,7 +22,7 @@
 form {
   width: 50%;
   background-image: url("../Images/search.svg");
-  background-position: 10px;
+  background-position: 20px;
   background-size: 20px;
   background-repeat: no-repeat;
 }
@@ -27,11 +31,18 @@ form {
   background-color: var(--mainColorLight2);
   border: none;
   border-radius: 0.6rem;
+  margin: 10px;
 }
 
 .form-control::placeholder {
   color: var(--textcolor);
   padding: 0 0 0 30px;
+}
+
+.form-control:focus {
+  border: none;
+  border-color: none;
+  color: none;
 }
 
 .me-2 {

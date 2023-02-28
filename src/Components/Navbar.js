@@ -6,10 +6,10 @@ import mainLogo from "../Images/main-logo.svg"
 
 function NavbarMenu() {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="sm">
       <Container fluid>
         <Navbar.Brand href="#home">
-          <img alt="mainLogo" src={mainLogo} width="50" height="50" /> Notes
+          <img alt="mainLogo" src={mainLogo} width="50" height="50" className="main-logo" /> Заметки
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
