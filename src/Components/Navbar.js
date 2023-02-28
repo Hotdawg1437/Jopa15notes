@@ -8,9 +8,8 @@ function NavbarMenu() {
   return (
     <Navbar expand="sm">
       <Container fluid>
-        <Navbar.Brand href="#home">
-          <img alt="mainLogo" src={mainLogo} width="50" height="50" className="main-logo" /> Заметки
-        </Navbar.Brand>
+        <img alt="mainLogo" src={mainLogo} width="50" height="50" className="main-logo" />
+        <Navbar.Brand href="#home">Notes</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Form className="d-flex">

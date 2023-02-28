@@ -1,3 +1,7 @@
+.navbar>.container-fluid {
+  justify-content: flex-start;
+}
+
 .navbar {
   border-bottom: 0.5px solid var(--mainColorLight2);
   --bs-navbar-padding-y: 0;
@@ -6,9 +10,15 @@
 .navbar-brand {
   display: flex;
   color: var(--textcolor);
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+}
+
+.navbar-brand:hover {
+  color: var(--textcolor);
+  text-decoration: underline;
+}
+
+.navbar-brand:focus {
+  color: var(--textcolor);
 }
 
 .nav-link {
@@ -40,9 +50,8 @@ form {
 }
 
 .form-control:focus {
-  border: none;
-  border-color: none;
-  color: none;
+  box-shadow: none;
+  transition: none;
 }
 
 .me-2 {
@@ -54,5 +63,8 @@ input {
   color: var(--textcolor);
 }
 
+.main-logo {
+  margin: 10px 0 10px 0;
+}
 
 
